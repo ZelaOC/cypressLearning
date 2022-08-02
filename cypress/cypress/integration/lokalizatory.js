@@ -34,4 +34,4 @@ describe("E2E - First Lesson", () => {
         // cy.get("li").parent("#home-page-tabs").find("li").first() //wyszukanie elementu li po ID rodzica a wybierze pierwszy element ktory napotkał
         cy.get("li").parent("#home-page-tabs").find("li").contains("Best Sellers")
     })
-})
+})                                               

@@ -8,7 +8,7 @@ describe("E2E - We learn how to use invoke method", () => {
         cy.get('[title="Contact Us"]').invoke("text").then(tekst =>{
             cy.log(tekst);
         })
-
+        
         //Drugi sposob wykorzystania metody invoke, uzyskanie dostepu do wartosci atrybuty
         cy.get('[title="Contact Us"]').invoke("attr","href").then(link =>{
             cy.log(link);
