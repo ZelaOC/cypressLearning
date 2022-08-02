@@ -22,12 +22,19 @@ Cypress.Commands.add("openTshirtsTab", () => {
 })
 
 Cypress.Commands.add("searchPharse", (tekst, delayValue) =>{
-    cy.get("#search_query_top").type(tekst, {delay: delayValue}) 
+    cy.get("#search_query_top").type(tekst, {delay: delayValue});
 })
 
 Cypress.Commands.add("searchPharseClear", () =>{
     cy.get("#search_query_top").clear();
 })
+
+Cypress.Commands.add("incorrectLogin", (incorrectEmail, incPassword) =>{
+    cy.get('input[placeholder="Email"]').type(incorrectEmail);
+    cy.get('input[placeholder="Password"]').type(incPassword);
+    cy.get("button.btn").contains("Sign in").click();
+})
+
 //
 //
 // -- This is a dual command --
