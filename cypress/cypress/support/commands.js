@@ -29,11 +29,14 @@ Cypress.Commands.add("searchPharseClear", () =>{
     cy.get("#search_query_top").clear();
 })
 
-Cypress.Commands.add("incorrectLogin", (incorrectEmail, incPassword) =>{
-    cy.get('input[placeholder="Email"]').type(incorrectEmail);
-    cy.get('input[placeholder="Password"]').type(incPassword);
+Cypress.Commands.add("userLogin", (userEmail, userPassword) =>{
+    cy.get('input[placeholder="Email"]').clear();
+    cy.get('input[placeholder="Password"]').clear();
+    cy.get('input[placeholder="Email"]').type(userEmail);
+    cy.get('input[placeholder="Password"]').type(userPassword);
     cy.get("button.btn").contains("Sign in").click();
 })
+
 
 //
 //
