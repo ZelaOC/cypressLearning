@@ -9,7 +9,7 @@ describe("E2E - We learn how to run our first API test", () => {
     })
 
     it("First API Test - checking loaded popular tag", () =>{
-        cy.intercept("GET", "https://api.realworld.io/api/tags").as("requestPopularTag");
+        cy.intercept("GET", "https://api.realworld.io/api/tags").as("requestPopularTag"); // intercept przechwytywanie zapytań api na froncie
         cy.visit("https://angular.realworld.io/");
         cy.wait("@requestPopularTag");
         cy.get("@requestPopularTag").then(response =>{

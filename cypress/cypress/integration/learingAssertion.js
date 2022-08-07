@@ -48,7 +48,7 @@ describe("E2E - We learn how to use assertion", () => {
         cy.get("#search_query_top").should("have.css","line-height", "45px")
 
         //Twelth example, we check if geted css value is correct
-        cy.get("#search_query_top").then(getCSS =>{
+        cy.get("#search_query_top").then(getCSS => {
             expect(getCSS).to.have.css("line-height", "45px")
         })
 
