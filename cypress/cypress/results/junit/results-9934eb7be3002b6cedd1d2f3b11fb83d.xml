@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.0850" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:09:25" tests="0" file="cypress/integration/wpisywanie.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to put data into element" timestamp="2022-08-09T19:09:25" tests="2" time="7.0740" failures="0">
+    <testcase name="E2E - We learn how to put data into element Put data into field" time="6.8880" classname="Put data into field">
+    </testcase>
+    <testcase name="E2E - We learn how to put data into element Clear data form filed" time="0.1750" classname="Clear data form filed">
+    </testcase>
+  </testsuite>
+</testsuites>

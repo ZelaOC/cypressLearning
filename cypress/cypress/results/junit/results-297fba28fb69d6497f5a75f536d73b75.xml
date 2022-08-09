@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.7730" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:06:35" tests="0" file="cypress/integration/environmentVariables.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to create and use environment variables" timestamp="2022-08-09T19:06:35" tests="1" time="4.7630" failures="0">
+    <testcase name="E2E - We learn how to create and use environment variables Set new variable" time="1.7320" classname="Set new variable">
+    </testcase>
+  </testsuite>
+</testsuites>

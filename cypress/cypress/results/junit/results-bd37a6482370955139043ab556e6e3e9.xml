@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.2800" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:08:37" tests="0" file="cypress/integration/shadowDom.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to click on element in Shoadowdom" timestamp="2022-08-09T19:08:37" tests="1" time="2.2740" failures="0">
+    <testcase name="E2E - We learn how to click on element in Shoadowdom Click on element with method shadow" time="0.6080" classname="Click on element with method shadow">
+    </testcase>
+  </testsuite>
+</testsuites>

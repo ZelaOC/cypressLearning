@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.5370" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T21:18:36" tests="0" file="cypress/integration/visualTesting.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how test visual regresion" timestamp="2022-08-09T21:18:36" tests="1" time="6.5270" failures="0">
+    <testcase name="E2E - We learn how test visual regresion We veryfi elements" time="5.2240" classname="We veryfi elements">
+    </testcase>
+  </testsuite>
+</testsuites>

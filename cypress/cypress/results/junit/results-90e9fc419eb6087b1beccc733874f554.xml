@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.7610" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:08:03" tests="0" file="cypress/integration/pageObjectModelFirst.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to select Page Object Model " timestamp="2022-08-09T19:08:03" tests="1" time="4.7520" failures="0">
+    <testcase name="E2E - We learn how to select Page Object Model  Click on element" time="4.7460" classname="Click on element">
+    </testcase>
+  </testsuite>
+</testsuites>

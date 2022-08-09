@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.0950" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:08:58" tests="0" file="cypress/integration/uploadPlikow.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to upload files into application" timestamp="2022-08-09T19:08:58" tests="1" time="25.0890" failures="0">
+    <testcase name="E2E - We learn how to upload files into application Upload files on demand" time="25.0810" classname="Upload files on demand">
+    </testcase>
+  </testsuite>
+</testsuites>

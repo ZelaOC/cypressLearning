@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.5540" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:04:27" tests="0" file="cypress/integration/apiTests/firstApiTest.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to run our first API test" timestamp="2022-08-09T19:04:27" tests="2" time="5.5460" failures="0">
+    <testcase name="E2E - We learn how to run our first API test First API Test - checking loaded popular tag" time="2.5830" classname="First API Test - checking loaded popular tag">
+    </testcase>
+    <testcase name="E2E - We learn how to run our first API test First API Test - checking that incorrect login try gets 403 Forbbiden" time="1.4740" classname="First API Test - checking that incorrect login try gets 403 Forbbiden">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.1330" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:08:10" tests="0" file="cypress/integration/pageObjectModelSecond.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to check correctly popup alert" timestamp="2022-08-09T19:08:10" tests="2" time="1.1250" failures="0">
+    <testcase name="E2E - We learn how to check correctly popup alert We popup alerts" time="0.1700" classname="We popup alerts">
+    </testcase>
+    <testcase name="E2E - We learn how to check correctly popup alert Second alert" time="0.0890" classname="Second alert">
+    </testcase>
+  </testsuite>
+</testsuites>

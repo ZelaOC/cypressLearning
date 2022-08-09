@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.1900" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-09T19:04:35" tests="0" file="cypress/integration/apiTests/mockApiTest.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - We learn how to mock response from API for test purpose" timestamp="2022-08-09T19:04:35" tests="3" time="5.1800" failures="0">
+    <testcase name="E2E - We learn how to mock response from API for test purpose First API Test - checking loaded popular tag" time="1.1330" classname="First API Test - checking loaded popular tag">
+    </testcase>
+    <testcase name="E2E - We learn how to mock response from API for test purpose First API Test - checking that incorrect login try gets 403 Forbbiden" time="1.4570" classname="First API Test - checking that incorrect login try gets 403 Forbbiden">
+    </testcase>
+    <testcase name="E2E - We learn how to mock response from API for test purpose Second API Test - checking that user can correct log into application and we mock response for geted tags" time="1.7080" classname="Second API Test - checking that user can correct log into application and we mock response for geted tags">
+    </testcase>
+  </testsuite>
+</testsuites>

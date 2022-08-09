@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-09T19:09:25.986Z",
+    "end": "2022-08-09T19:09:33.071Z",
+    "duration": 7085,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b328e2a0-9250-4c06-b9f5-8928053b18cc",
+      "title": "",
+      "fullFile": "cypress/integration/wpisywanie.js",
+      "file": "cypress/integration/wpisywanie.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "715c62d0-5385-4a9c-a06d-eae40f0d7fb8",
+          "title": "E2E - We learn how to put data into element",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Put data into field",
+              "fullTitle": "E2E - We learn how to put data into element Put data into field",
+              "timedOut": null,
+              "duration": 6888,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.get(\"#search_query_top\").type(\"Test {enter}\"); // wybranie elementu o ID(search_query_top) wpisanie w niego tekstu i kliknięcie Entera\n// cy.get(\"#search_query_top\").type(\"Test {backspace}\", {delay: 500ms}) // wybranie elementu o ID(search_query_top) wpisanie w niego tekstu i kliknięcie Backspace (usuniecie ostatniego znaku wpisanego) | 1000 ms to 1 s",
+              "err": {},
+              "uuid": "16977405-b5f8-4265-8f46-e1b2a5b47968",
+              "parentUUID": "715c62d0-5385-4a9c-a06d-eae40f0d7fb8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clear data form filed",
+              "fullTitle": "E2E - We learn how to put data into element Clear data form filed",
+              "timedOut": null,
+              "duration": 175,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#search_query_top\").clear();",
+              "err": {},
+              "uuid": "bf4ed322-e279-4b24-b135-3b935b5a4aa8",
+              "parentUUID": "715c62d0-5385-4a9c-a06d-eae40f0d7fb8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16977405-b5f8-4265-8f46-e1b2a5b47968",
+            "bf4ed322-e279-4b24-b135-3b935b5a4aa8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7063,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

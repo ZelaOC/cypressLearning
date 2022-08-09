@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-09T19:04:35.616Z",
+    "end": "2022-08-09T19:04:40.806Z",
+    "duration": 5190,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a35a27c-c1a9-4a7f-ba1e-8c8bc633ef22",
+      "title": "",
+      "fullFile": "cypress/integration/apiTests/mockApiTest.js",
+      "file": "cypress/integration/apiTests/mockApiTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ba9b4b2-c9df-401d-bace-2a243bc3f435",
+          "title": "E2E - We learn how to mock response from API for test purpose",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "First API Test - checking loaded popular tag",
+              "fullTitle": "E2E - We learn how to mock response from API for test purpose First API Test - checking loaded popular tag",
+              "timedOut": null,
+              "duration": 1133,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\").as(\"requestPopularTag\");\ncy.visit(\"https://angular.realworld.io/\");\ncy.wait(\"@requestPopularTag\");\ncy.get(\"@requestPopularTag\").then(response => {\n  console.log(response);\n  expect(response.response.statusCode).to.eq(200);\n  expect(response.response.body.tags).to.contain(\"welcome\").and.to.contain(\"introduction\");\n});",
+              "err": {},
+              "uuid": "a1e5df05-3a8a-46fd-a3f0-b30e2bb445d2",
+              "parentUUID": "3ba9b4b2-c9df-401d-bace-2a243bc3f435",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "First API Test - checking that incorrect login try gets 403 Forbbiden",
+              "fullTitle": "E2E - We learn how to mock response from API for test purpose First API Test - checking that incorrect login try gets 403 Forbbiden",
+              "timedOut": null,
+              "duration": 1457,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"POST\", \"https://api.realworld.io/api/users/login\").as(\"userLogIn\");\ncy.get(\"a.nav-link\").contains(\"Sign in\").click();\ncy.userLogin(\"incorrectLogin\", \"incorrectPassword\");\ncy.wait(\"@userLogIn\");\ncy.get(\"@userLogIn\").then(responseCode => {\n  console.log(responseCode);\n  expect(responseCode.response.statusCode).to.eq(403);\n  expect(responseCode.response.statusMessage).to.contain(this.apiData.statusMessage403);\n});",
+              "err": {},
+              "uuid": "b78d398e-9e9f-4d38-90be-186c32adcbab",
+              "parentUUID": "3ba9b4b2-c9df-401d-bace-2a243bc3f435",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Second API Test - checking that user can correct log into application and we mock response for geted tags",
+              "fullTitle": "E2E - We learn how to mock response from API for test purpose Second API Test - checking that user can correct log into application and we mock response for geted tags",
+              "timedOut": null,
+              "duration": 1708,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\", {\n  fixture: 'popularTags.json'\n}).as(\"requestPopularTag\");\ncy.userLogin(\"michal_zelga@test.pl\", \"tiki!\");\ncy.wait(\"@requestPopularTag\");\ncy.get(\"@requestPopularTag\").then(responseTags => {\n  expect(responseTags.response.statusCode).to.eq(200);\n  expect(responseTags.response.body.tags).to.contain(this.changedTags.tags[0]).and.to.contain(this.changedTags.tags[1]).and.to.contain(this.changedTags.tags[2]).and.to.contain(this.changedTags.tags[3]);\n});",
+              "err": {},
+              "uuid": "163a51fe-b65f-40b6-a04c-fc06b613f5b4",
+              "parentUUID": "3ba9b4b2-c9df-401d-bace-2a243bc3f435",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1e5df05-3a8a-46fd-a3f0-b30e2bb445d2",
+            "b78d398e-9e9f-4d38-90be-186c32adcbab",
+            "163a51fe-b65f-40b6-a04c-fc06b613f5b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
