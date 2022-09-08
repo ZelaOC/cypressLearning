@@ -30,5 +30,22 @@ const color = null;
 
 // array type
 
-let newArray = [];
+let newArray = ["Alice","Thomas","Pablo","Escobar"];
 console.log(typeof(newArray));
+console.log(newArray); 
+
+// object type
+
+const examplePerson = {
+    firstName: "randomName",
+    lastName: "randomLastName",
+    age:  "29"
+}
+
+console.log(examplePerson);
+console.log(examplePerson.age);
+console.log(examplePerson.lastName.length);
+
+console.log(newArray[1].toLocaleUpperCase());
+
+console.log(secondNumber.toFixed(0));
