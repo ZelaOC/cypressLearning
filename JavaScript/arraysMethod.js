@@ -37,3 +37,4 @@ console.log(arrayToStirng);
 
 const nameArrayToString = exampleNameArray.join(".");
 console.log(nameArrayToString);
+

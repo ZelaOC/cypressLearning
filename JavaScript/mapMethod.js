@@ -3,7 +3,6 @@ const ageArray = [23, 28, 31, 18];
 const nameArray = ['Michał', 'Alicja', 'Jan', 'Klaudia', 'Marcin', 'Paulina'];
 let femaleArray = new Array();
 let menArray = new Array();
-// let famelArrayIndex = 0;
 
 numberArray.map((simpleNumber, indexElement) =>{
     if (simpleNumber > 3){
